@@ -3,6 +3,7 @@ package br.com.aldo.study.j8.stream;
 
 public class Dish {
 	
+
 	public enum Type {MEAT, FISH, OTHER}
 	
 	private final String name;
@@ -34,6 +35,10 @@ public class Dish {
 		return type;
 	}
 	
+	@Override
+	public String toString() {
+		return "Dish [name=" + name + ", vegetarian=" + vegetarian + ", calories=" + calories + ", type=" + type + "]";
+	}
 	
 	
 }
