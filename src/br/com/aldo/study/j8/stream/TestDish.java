@@ -16,6 +16,9 @@ public class TestDish {
 
 		System.out.println(threeHighCaloricDishNames);
 		System.out.println(count);
+
+		List<Dish> menuNew = MenuUtils.getListMenu();
+		menuNew.stream().collect(new MyOwnToListCollectorImpl<>()).forEach(System.out::println);
 	}
 
 }
